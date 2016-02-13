@@ -151,15 +151,23 @@
       print "<a href='${url}' target='_blank'>\n";
     }
     print "<div class='widget ${widget_class}'>\n";
+    print "<div class='vertical-align'>\n";
     print "<h2>${title}</h2>\n";
     print "<table>\n";
-    print "<tr><td class='left'>${critical}</td><td class='right'>Critical</td></tr>\n";
-    print "<tr><td class='left'>${warning}</td><td class='right'>Warning</td></tr>\n";
-    print "<tr><td class='left'>${unknown}</td><td class='right'>Unknown</td></tr>\n";
-    if ($host_down != -1) {
+    if ($critical > 0) {
+      print "<tr><td class='left'>${critical}</td><td class='right'>Critical</td></tr>\n";
+    }
+    if ($warning > 0) {
+      print "<tr><td class='left'>${warning}</td><td class='right'>Warning</td></tr>\n";
+    }
+    if ($unknown > 0) {
+      print "<tr><td class='left'>${unknown}</td><td class='right'>Unknown</td></tr>\n";
+    }
+    if ($host_down > 0) {
       print "<tr><td class='left'>${host_down}</td><td class='right'>Host down</td></tr>\n";
     }
     print "</table>\n";
+    print "</div>\n";
     print "</div>\n";
     if ($url != null) {
       print "</a>\n";
