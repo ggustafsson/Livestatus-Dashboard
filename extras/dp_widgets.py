@@ -3,7 +3,7 @@
 import os.path
 import socket
 
-filter = [ "deep_pings_jlr_prod" ]
+filter = [ "" ]
 filter_ends = ("_preprod", "_qa", "_val")
 widget_path = "/opt/monitor/livestatus-dash/widgets"
 
