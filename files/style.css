@@ -42,15 +42,16 @@ div#time span {
 
 div.widget {
   float: left;
-  display: table;
+  display: flex;
   width: 236px;
   height: 211px;
-  text-align: center;
+  align-items: center;
+  overflow: hidden;
   margin: 2px;
 }
-div.vertical-align {
-  display: table-cell;
-  vertical-align: middle;
+div.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 div.widget.normal {
   background-color: #96bf48;
@@ -61,13 +62,13 @@ div.widget.warning {
 div.widget.critical {
   background-color: #dc5945;
 }
+div.widget table {
+  margin-left: auto;
+  margin-right: auto;
+}
 div.widget h2 {
   margin: 0px;
   margin-bottom: 10px;
-}
-div.widget table {
-  table-layout: fixed;
-  width: 100%;
 }
 td.left {
   font-size: 22px;

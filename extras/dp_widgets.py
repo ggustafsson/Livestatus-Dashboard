@@ -5,7 +5,7 @@ import socket
 
 filter = [ "" ]
 filter_ends = ("_preprod", "_qa", "_val")
-widget_path = "/opt/monitor/livestatus-dash/widgets"
+widget_path = "/opt/monitor/livestatus-dashboard/widgets"
 
 template = """<?php
   $title = "REPLACE_TITLE";

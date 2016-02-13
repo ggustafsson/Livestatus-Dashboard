@@ -151,7 +151,7 @@
       print "<a href='${url}' target='_blank'>\n";
     }
     print "<div class='widget ${widget_class}'>\n";
-    print "<div class='vertical-align'>\n";
+    print "<div class='center'>\n";
     print "<h2>${title}</h2>\n";
     print "<table>\n";
     if ($critical > 0) {
