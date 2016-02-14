@@ -9,7 +9,7 @@ widget_path = "/opt/monitor/livestatus-dashboard/widgets"
 
 template = """<?php
   $title = "REPLACE_TITLE";
-  $url = "https://10.57.78.30/monitor/index.php/monitor/index.php/listview?q=%5Bservices%5D%20host.name%3D%22REPLACE_URL%22";
+  $url = "https://10.57.78.29/monitor/index.php/monitor/index.php/listview?q=%5Bservices%5D%20host.name%3D%22REPLACE_URL%22";
 
   // Livestatus info: https://mathias-kettner.de/checkmk_livestatus.html
   $query_hosts = "";
