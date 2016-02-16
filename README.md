@@ -1,6 +1,8 @@
 Livestatus Dashboard
 ====================
 
+![Preview](https://github.com/ggustafsson/Livestatus-Dashboard/raw/master/extras/Preview.png)
+
 Description
 -----------
 AIN'T NOBODY GOT TIME FOR THAT!
