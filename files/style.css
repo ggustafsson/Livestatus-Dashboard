@@ -52,6 +52,7 @@ div.widget {
 div.center {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 div.widget.normal {
   background-color: #96bf48;
