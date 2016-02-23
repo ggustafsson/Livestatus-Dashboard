@@ -2,7 +2,7 @@
 
 <!--
 # Livestatus Dashboard
-# Version 0.17 beta
+# Version 0.18 beta
 #
 # Written by Göran Gustafsson (gustafsson.g at gmail.com).
 # License: BSD 3-Clause.
