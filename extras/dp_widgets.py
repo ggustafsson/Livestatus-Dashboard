@@ -34,7 +34,7 @@ EOQ;
 socket_path = "/opt/monitor/var/rw/live"
 s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 s.connect(socket_path)
-s.send("GET hosts\nColumns: name\nFilter: name ~~ deep_pings_\n")
+s.send("GET hosts\nColumns: name\nFilter: name ~~ ^deep_pings_\nFilter: name ~~ ^aws_prod_\nOr: 2\n")
 s.shutdown(socket.SHUT_WR)
 
 result = s.recv(100000000).split("\n")
