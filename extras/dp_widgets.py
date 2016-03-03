@@ -44,9 +44,10 @@ for host in result:
         file = "%s/%s.php" % (widget_path, host)
         if os.path.exists(file):
             continue
-        title = host.replace("deep_pings_", "")
+        title1 = host.replace("aws_prod_", "")
+        title2 = host.replace("deep_pings_", "")
         widget = template
-        widget = widget.replace("REPLACE_TITLE", title)
+        widget = widget.replace("REPLACE_TITLE", title2)
         widget = widget.replace("REPLACE_URL", host)
         widget = widget.replace("REPLACE_NAME", host)
         print "Creating file %s" % file
