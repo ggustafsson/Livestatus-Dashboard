@@ -45,7 +45,7 @@ for host in result:
         if os.path.exists(file):
             continue
         title1 = host.replace("aws_prod_", "")
-        title2 = host.replace("deep_pings_", "")
+        title2 = title1.replace("deep_pings_", "")
         widget = template
         widget = widget.replace("REPLACE_TITLE", title2)
         widget = widget.replace("REPLACE_URL", host)
