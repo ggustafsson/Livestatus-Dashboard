@@ -9,7 +9,7 @@ widget_path = "/opt/monitor/livestatus-dashboard/widgets"
 
 template = """<?php
   $title = "REPLACE_TITLE";
-  $url = "https://10.57.78.29/monitor/index.php/monitor/index.php/listview?q=%5Bservices%5D%20host.name%3D%22REPLACE_URL%22";
+  $url = "https://10.57.72.29/monitor/index.php/monitor/index.php/listview?q=%5Bservices%5D%20host.name%3D%22REPLACE_URL%22";
 
   // Livestatus info: https://mathias-kettner.de/checkmk_livestatus.html
   $query_hosts = "";
@@ -34,7 +34,7 @@ EOQ;
 socket_path = "/opt/monitor/var/rw/live"
 s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 s.connect(socket_path)
-s.send("GET hosts\nColumns: name\nFilter: name ~~ ^deep_pings_\nFilter: name ~~ ^aws_prod_\nOr: 2\n")
+s.send("GET hosts\nColumns: name\nFilter: name ~~ ^deep_pings_\nFilter: name ~~ ^eu-west-1_\nFilter: name ~~ ^us-east-1_\nOr: 3\n")
 s.shutdown(socket.SHUT_WR)
 
 result = s.recv(100000000).split("\n")
