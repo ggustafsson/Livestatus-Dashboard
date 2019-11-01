@@ -1,5 +1,5 @@
-Livestatus Dashboard
-====================
+Livestatus Dashboard (Abandoned)
+================================
 
 ![Preview](https://github.com/ggustafsson/Livestatus-Dashboard/raw/master/extras/Preview.png)
 
